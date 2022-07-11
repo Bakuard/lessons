@@ -1,8 +1,8 @@
-package com.bakuard.lessons.lesson5;
+package com.bakuard.lessons.lesson5.system;
 
+import com.bakuard.lessons.lesson5.Vector;
 import com.bakuard.lessons.lesson5.components.Movable;
 import com.bakuard.lessons.lesson5.components.MovableComponent;
-import com.bakuard.lessons.lesson5.system.SystemMove;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

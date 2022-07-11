@@ -1,8 +1,7 @@
-package com.bakuard.lessons.lesson5;
+package com.bakuard.lessons.lesson5.system;
 
 import com.bakuard.lessons.lesson5.components.Rotable;
 import com.bakuard.lessons.lesson5.components.RotableComponent;
-import com.bakuard.lessons.lesson5.system.SystemRotate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

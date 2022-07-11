@@ -7,8 +7,10 @@
     <groupId>com.bakuard</groupId>
     <artifactId>lessons</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
@@ -16,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
+            <artifactId>junit-jupiter-engine</artifactId>
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
@@ -27,5 +29,16 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
+                <version>2.22.0</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
