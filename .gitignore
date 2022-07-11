@@ -1,0 +1,10 @@
+/.idea/**
+*.iml
+/target/
+*.log
+*.ini
+/src/main/webapp/WEB-INF/classes/security/
+/docs/
+/logs/
+/src/main/resources/config/security.properties
+/externalConfig/**
