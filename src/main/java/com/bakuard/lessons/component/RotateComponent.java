@@ -1,35 +1,31 @@
-package com.bakuard.lessons.lesson5.components;
+package com.bakuard.lessons.component;
 
 import java.util.Objects;
 
-public class RotableComponent implements Rotable {
+public class RotateComponent {
 
     private int direction;
     private int angularVelocity;
     private int directionsNumber;
 
-    public RotableComponent(int direction, int angularVelocity, int directionsNumber) {
+    public RotateComponent(int direction, int angularVelocity, int directionsNumber) {
         this.direction = direction;
         this.angularVelocity = angularVelocity;
         this.directionsNumber = directionsNumber;
     }
 
-    @Override
     public int getDirection() {
         return direction;
     }
 
-    @Override
     public int getAngularVelocity() {
         return angularVelocity;
     }
 
-    @Override
     public int getDirectionsNumber() {
         return directionsNumber;
     }
 
-    @Override
     public void setDirection(int direction) {
         this.direction = direction;
     }
@@ -38,7 +34,7 @@ public class RotableComponent implements Rotable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        RotableComponent that = (RotableComponent) o;
+        RotateComponent that = (RotateComponent) o;
         return direction == that.direction &&
                 angularVelocity == that.angularVelocity &&
                 directionsNumber == that.directionsNumber;

@@ -1,44 +1,30 @@
-package com.bakuard.lessons.lesson5.components;
-
-import com.bakuard.lessons.lesson5.Vector;
+package com.bakuard.lessons.component;
 
 import java.util.Objects;
 
-public class MovableComponent implements Movable {
+public class MoveComponent {
 
     private Vector position;
     private Vector velocity;
 
-    public MovableComponent() {
+    public MoveComponent() {
         position = new Vector(0 ,0);
         velocity = new Vector(0, 0);
     }
 
-    @Override
     public Vector getPosition() {
         return position;
     }
 
-    @Override
     public Vector getVelocity() {
         return velocity;
-    }
-
-    @Override
-    public void setPosition(Vector position) {
-        this.position = Objects.requireNonNull(position, "position can't be null");
-    }
-
-    @Override
-    public void setVelocity(Vector velocity) {
-        this.velocity = Objects.requireNonNull(velocity, "velocity can't be null");
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MovableComponent that = (MovableComponent) o;
+        MoveComponent that = (MoveComponent) o;
         return position.equals(that.position) && velocity.equals(that.velocity);
     }
 
