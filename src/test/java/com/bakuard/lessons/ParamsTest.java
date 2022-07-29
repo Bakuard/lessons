@@ -1,6 +1,6 @@
 package com.bakuard.lessons;
 
-import com.bakuard.lessons.exceptions.UnknownParameterException;
+import com.bakuard.lessons.exception.UnknownParameterException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

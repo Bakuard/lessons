@@ -1,6 +1,6 @@
 package com.bakuard.lessons;
 
-import com.bakuard.lessons.exceptions.UnknownParameterException;
+import com.bakuard.lessons.exception.UnknownParameterException;
 
 import java.util.HashMap;
 import java.util.Map;

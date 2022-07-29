@@ -1,8 +1,9 @@
-package com.bakuard.lessons.exceptions;
+package com.bakuard.lessons.exception;
 
 public class UnknownParameterException extends RuntimeException {
 
     public UnknownParameterException() {
+
     }
 
     public UnknownParameterException(String message) {
